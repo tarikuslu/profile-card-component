@@ -1,0 +1,92 @@
+:root {
+--darkCyan: hsl(185, 75%, 39%);
+--darkBlue: hsl(229, 23%, 23%);
+--grayishBlue: hsl(227, 10%, 46%);
+--darkGray: hsl(0, 0%, 59%);
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 0.8375rem;
+}
+
+body {
+    font-size: 18px;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg") ;
+    background-position: top -400px left -250px, bottom -500px right -200px  ;
+    background-repeat: no-repeat, no-repeat;
+    background-color: var(--darkCyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    min-width: 25%;
+}
+.profile-info {
+    background-image: url("./images/bg-pattern-card.svg");
+    background-size: 100% 140px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 1em;
+    padding: 2.5em 0;
+}
+
+.profile-info img {
+    margin-top: 2.5em;
+   border-radius: 50%;
+   border: 4px solid #fff;
+}
+
+.profile-name {
+    margin: 0.8em 0 2em 0;
+   
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2.5em;
+}
+
+.stat-text,
+.age,
+.location {
+    color: var(--darkGray);
+}
+
+.location {
+    margin-top: 0.6em;
+    padding-bottom: 2.5em;
+    font-weight: bold;
+    border-bottom: 3px solid #eaeaec;
+}
+
+.stat {
+    margin-right: 1em;
+}
+
+.stat-text {
+    letter-spacing: 1.5px;
+}
+
+.stat-number {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+
